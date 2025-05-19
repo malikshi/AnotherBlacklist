@@ -5,7 +5,10 @@ apps.apple.com
 saweria.co
 coingecko.com
 ouo.io
-coolrom.com                                         #Hagezi Piracy        https://t.me/c/1403582395/173986/256650
+coolrom.com
+filecr.com
+mediafire.com
+#Hagezi Piracy        https://t.me/c/1403582395/173986/256650
 coolrom.com.au                                      #Hagezi Piracy        https://t.me/c/1403582395/173986/256650
 #####################################################
 # Antivirus
