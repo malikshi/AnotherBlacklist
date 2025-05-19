@@ -715,3 +715,6 @@ kangaroo.vocento.com                        #Tracker - Prevents site access -> a
 # Need more testing
 #####################################################
 # androidtvsetupwraithfe-pa.googleapis.com   #Might cause new Google TV home to crash (1st time setup)
+# mkv
+filecr.com
+mediafire.com
