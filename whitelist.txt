@@ -92,6 +92,8 @@ keyword:sub
 keyword:upload
 keyword:yts.
 keyword:alldebrid
+keyword:kuyhaa.
+keyword:yasir252.
 romsfun.com
 romspure.cc
 alldebrid.com
