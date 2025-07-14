@@ -100,6 +100,9 @@ romspure.cc
 alldebrid.com
 nexon.com
 4pda.to
+mssdk-sg.capcutapi.com
+mcs-normal-sg.capcutapi.com
+flutter.dev
 
 
 
