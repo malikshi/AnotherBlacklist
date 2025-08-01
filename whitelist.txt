@@ -110,6 +110,7 @@ full:blogspot.com
 gfxtra31.com
 osdn.net
 forms.gle
+shorturl.at
 
 
 #####################################################
