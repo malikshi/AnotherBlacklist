@@ -11,6 +11,12 @@ keyword:sing-box
 full:vercel.app
 full:api.vercel.app
 full:www.vercel.app
+invl.co
+invl.me
+invle.co
+involve.asia
+keyword:invl.
+keyword:involve.
 
 #####################################################
 # Marketplace & Wallet Indo
