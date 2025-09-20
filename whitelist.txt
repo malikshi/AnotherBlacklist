@@ -8,6 +8,7 @@ saweria.co
 coingecko.com
 ouo.io
 keyword:sing-box
+full:pages.dev
 full:vercel.app
 full:api.vercel.app
 full:www.vercel.app
