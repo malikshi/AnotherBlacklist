@@ -186,6 +186,7 @@ keyword:dood.
 keyword:doodstream.
 keyword:d-s.
 keyword:doodcdn.
+keyword:nhentai.
 figma.com
 vanced.to
 d-s.io
