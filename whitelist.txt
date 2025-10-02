@@ -188,6 +188,12 @@ keyword:d-s.
 keyword:doodcdn.
 keyword:nhentai.
 keyword:dramaday.
+applovin.com
+amazon-adsystem.com
+weroam.xyz
+pangle.io
+vungle.com
+unity3d.com
 psa.wf
 figma.com
 vanced.to
