@@ -190,6 +190,8 @@ keyword:doodcdn.
 keyword:nhentai.
 keyword:dramaday.
 keyword:sssinstagram.
+keyword:dexscreener.
+dexscreener.com
 savefiles.com
 bigwarp.io
 bigwarp.pro
