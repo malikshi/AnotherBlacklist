@@ -191,6 +191,8 @@ keyword:nhentai.
 keyword:dramaday.
 keyword:sssinstagram.
 keyword:dexscreener.
+keyword:codashop.
+codashop.com
 dexscreener.com
 savefiles.com
 bigwarp.io
