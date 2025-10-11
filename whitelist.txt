@@ -192,6 +192,7 @@ keyword:dramaday.
 keyword:sssinstagram.
 keyword:dexscreener.
 keyword:codashop.
+keyword:donkey.
 codashop.com
 dexscreener.com
 savefiles.com
