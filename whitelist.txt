@@ -194,6 +194,7 @@ keyword:dexscreener.
 keyword:codashop.
 keyword:donkey.
 keyword:dsvplay.
+keyword:qqdl.
 gas.zip
 massgrave.dev
 exness.com
