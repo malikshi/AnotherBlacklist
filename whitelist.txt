@@ -195,6 +195,7 @@ keyword:codashop.
 keyword:donkey.
 keyword:dsvplay.
 keyword:qqdl.
+keyword:f1box.
 gas.zip
 massgrave.dev
 exness.com
