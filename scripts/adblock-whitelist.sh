@@ -9,18 +9,18 @@ function show_usage {
     echo "Converts a domain list into AdGuard Home filter format."
     echo
     echo "Modes:"
-    echo "  -w, --whitelist     Converts plain domains to WHITELIST rules (e.g., @@||domain.com^)."
-    echo "  -b, --blocklist     Converts plain domains to BLOCKLIST rules (e.g., ||domain.com^). [DEFAULT]"
+    echo "  -w, --whitelist      Converts plain domains and keyword/regex rules to WHITELIST format."
+    echo "  -b, --blocklist      Converts plain domains and keyword/regex rules to BLOCKLIST format. [DEFAULT]"
     echo
     echo "Options:"
-    echo "  -o, --output <file> Write the result to a file instead of standard output."
-    echo "  -h, --help          Display this help message."
+    echo "  -o, --output <file>  Write the result to a file instead of standard output."
+    echo "  -h, --help           Display this help message."
     echo
     echo "Special Prefixes (always converted to specific block/white rules):"
-    echo "  'full:domain.com'       -> domain.com         (Exact domain block)"
-    echo "  'keyword:word'          -> /word/             (Regex keyword block)"
-    echo "  'regex:expression'      -> /expression/       (Regex block)"
-    echo "  'regex-white:expression'  -> @@/expression/     (Regex whitelist/exception)"
+    echo "  'full:domain.com'        -> domain.com         (Exact domain block)"
+    echo "  'keyword:word'           -> /word/ or @@/word/ (Regex keyword, follows mode)"
+    echo "  'regex:expression'       -> /expression/ or @@/expression/ (Regex, follows mode)"
+    echo "  'regex-white:expression' -> @@/expression/       (Regex whitelist/exception, ignores mode)"
     exit 1
 }
 
@@ -76,7 +76,7 @@ function process_file {
             continue
         fi
 
-        # FIX: Extract only the first column of text from the line.
+        # Extract only the first column of text from the line.
         # This correctly handles descriptions with or without a '#'.
         rule_part=$(echo "$line" | awk '{print $1}')
 
@@ -85,8 +85,15 @@ function process_file {
             domain=${rule_part#full:}
             echo "$domain"
         elif [[ "$rule_part" == keyword:* || "$rule_part" == regex:* ]]; then
+            # Determine the content of the regex
             if [[ "$rule_part" == keyword:* ]]; then content=${rule_part#keyword:}; else content=${rule_part#regex:}; fi
-            echo "/$content/"
+
+            # **FIXED LOGIC**: Check the mode to decide whether to add the '@@' whitelist prefix
+            if [ "$MODE" == "white" ]; then
+                echo "@@/$content/"
+            else
+                echo "/$content/"
+            fi
         elif [[ "$rule_part" == regex-white:* ]]; then
             content=${rule_part#regex-white:}
             echo "@@/$content/"
