@@ -34,12 +34,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Downloads From Upstream
+    - name: Generate Lists
       run: |
         python scripts/01_update_blacklist.py
         python scripts/02_parsing.py
         python scripts/03_merge.py
         python scripts/04_convert.py
+        chmod +x scripts/adblock-whitelist.sh
+        ./scripts/adblock-whitelist.sh -w whitelist.txt -o white.txt
 
     - name: Push changes to release branch
       run: |
@@ -49,6 +51,7 @@ jobs:
         mv json/* release/json/
         mv plain/* release/plain/
         mv srs/* release/srs/
+        mv white.txt release/
         cd release
         git init
         git config --local user.email "github-actions[bot]@users.noreply.github.com"

@@ -183,17 +183,11 @@ keyword:kuyhaa.
 keyword:yasir252.
 keyword:ovagames.
 keyword:rebahinxxi1.
-keyword:dood.
-keyword:doodstream.
-keyword:d-s.
-keyword:doodcdn.
-keyword:nhentai.
 keyword:dramaday.
 keyword:sssinstagram.
 keyword:dexscreener.
 keyword:codashop.
 keyword:donkey.
-keyword:dsvplay.
 keyword:qqdl.
 keyword:f1box.
 gas.zip
@@ -216,7 +210,6 @@ unity3d.com
 psa.wf
 figma.com
 vanced.to
-d-s.io
 romsfun.com
 romspure.cc
 alldebrid.com
@@ -951,4 +944,4 @@ kangaroo.vocento.com                        #Tracker - Prevents site access -> a
 #####################################################
 # Need more testing
 #####################################################
-# androidtvsetupwraithfe-pa.googleapis.com   #Might cause new Google TV home to crash (1st time setup)
+androidtvsetupwraithfe-pa.googleapis.com   #Might cause new Google TV home to crash (1st time setup)
