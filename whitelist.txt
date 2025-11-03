@@ -176,7 +176,6 @@ keyword:scans
 keyword:sci-hub
 keyword:share
 keyword:sub
-keyword:upload
 keyword:yts.
 keyword:alldebrid
 keyword:kuyhaa.
